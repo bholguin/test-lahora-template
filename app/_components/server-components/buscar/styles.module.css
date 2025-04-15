@@ -1,0 +1,75 @@
+.content {
+    width: 100%;
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttonStyled {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.searchStyled {
+    width: 52px;
+    height: 52px;
+}
+
+.inputStyled {
+    padding: 0;
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid var(--common-white) !important;
+}
+.inputStyled:hover {
+    border-color: var(--common-black);
+}
+.inputStyled:has(input:focus) {
+    border-color: var(--primary-main);
+}
+.inputStyledTest::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+.inputStyledTest {
+    font: inherit;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    letter-spacing: inherit;
+    color: currentColor;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    border: none;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    padding: 4px 0 5px;
+    outline: none;
+    color: white !important;
+    font-weight: 700 !important;
+    border: none;
+    font-size: 2rem !important;
+}
+
+.inputStyledRoot:hover {
+    border-bottom: 2px solid var(--common-white) !important;
+}
+
+@media (min-width: 1200px) { 
+    .searchStyled { 
+        width: 56px;
+        height: 56px;
+    }
+
+    .inputStyled {
+        width: 50%;
+        
+    }
+}

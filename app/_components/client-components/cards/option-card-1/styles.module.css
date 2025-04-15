@@ -1,0 +1,56 @@
+.content {
+    width: 100%;
+    height: 421px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    background-color: var(--grey-200);
+  }
+  
+  .imageStyled {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--warning-light);
+  }
+  
+  .contentIcon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--warning-light);
+  }
+  
+  .boxInformation {
+    padding-top: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .comment {
+    color: var(--grey-600);
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+  }
+  
+  .title {
+    color: var(--common-black);
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .dateText {
+    color: var(--grey-400);
+    font-size: 12px;
+  }
+  

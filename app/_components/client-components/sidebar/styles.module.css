@@ -1,0 +1,189 @@
+.drawerStyled {
+    position: relative;
+    background-color: transparent;
+}
+.sidebarCustom {
+    background-color: var(--side-bar-background);
+    color: var(--side-bar-color);
+    width: 340px;
+    position: fixed;
+    height: 100dvh;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 3200;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    transform: translateX(-340px);
+    transition: transform 225ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.accordionStyled {
+    padding: 0;
+    background-color: var(--side-bar-background)!important;
+    min-height: 60px;
+    box-shadow: none!important;
+    border-top: 1px solid var(--side-bar-accordion-borders);
+    border-bottom: 1px solid var(--side-bar-accordion-borders);
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+.accordionHeading {
+    all: unset;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 60px;
+}
+
+.accordionSummeryStyled {
+    color: var(--side-bar-color)!important;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 0;
+    line-height: 22px;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    gap: .3rem;
+    cursor: pointer;
+}
+.accordionSummeryStyled > div:first-child {
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.linkStyled {
+    color: var(--side-bar-color);
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    line-height: 22px;
+    padding-left: 1rem;
+    width: 100%;
+    letter-spacing: .5px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.linkStyled:hover {
+    background-color: var(--side-bar-link-hover);
+}
+
+.subLinkStyled {
+    color: var(--side-bar-color);
+    font-weight: 400!important;
+    font-size: 1rem;
+    text-transform: capitalize;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 18.5px;
+    min-height: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    letter-spacing: normal;
+}
+
+.subLinkStyled:hover {
+    font-weight: 700!important;
+    background-color: var(--side-bar-link-hover);
+}
+
+.inputContent,
+.buttonContent {
+    padding: 1rem;
+    width: 100%;
+}
+
+.buttonContent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inputStyled {
+    background-color: var(--search-input-background);
+    border-radius: 30px;
+    padding: 1rem;
+    height: 42px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscar {
+    color: var(--search-input-color);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+    padding: 0;
+}
+
+.buttonStyled {
+    background-color: var(--side-bar-close-background);
+    width: 59px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordionDetailsStyled {
+    display: flex;
+    flex-direction: column;
+    padding: 0!important;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 300ms, padding-bottom 300ms;
+}
+input[type=checkbox]:checked + * + .accordionDetailsStyled {
+    padding-bottom: 12px!important;
+    max-height: var(--max-height);
+} 
+.footerSlider {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.copyRights {
+    padding: 0;
+    margin: 0;
+    color: var(--side-bar-color);
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+}
+
+.icon {
+    width: 42px;
+    fill: var(--side-bar-icons);
+}

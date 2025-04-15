@@ -1,0 +1,21 @@
+{
+  "extends": ["eslint:recommended", "google", "next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-empty-object-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-prototype-builtins": "off",
+    "jsx-a11y/alt-text": "off",
+    "react/display-name": "off",
+    "max-len": "off",
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off",
+    "indent": ["error", 2],
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "import/max-dependencies": ["error", {
+      "max": 15,
+      "ignoreTypeImports": false
+    }]
+  }
+}

@@ -1,0 +1,143 @@
+.headerStyled {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    z-index: 1003;
+    top: 0;
+    width: 100%;
+    padding: 0 !important;
+    box-shadow: 0px 5px 14px 0px #0000001A !important;
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--header-background);
+}
+
+
+.logoStyled {
+    fill: var(--header-logo-color);
+    width: 11rem;
+}
+.boxOptions {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.buttonStyled {
+    background-color: var(--warning-dark)!important;
+    border-radius: 50%!important;
+    width: 2.1rem;
+    height: 2.1rem;
+    min-width: 0px!important;
+    gap: .6rem;
+    border: none;
+}
+
+.buttonStyled :global(.MuiButton-startIcon) {
+    margin: 0!important;
+    display: flex;
+}
+
+.buttonText {
+    color: var(--common-white);
+    padding: 0;
+    font-size: 0.9rem;
+    display: none!important;
+    min-width: fit-content;
+}
+
+.lensStyled {
+    display: none!important;
+}
+
+.pdfButton {
+    background-color: var(--warning-main)!important;
+    color: var(--header-color)!important;
+    height: 2rem;
+    width: 2.1rem;
+    display: flex;
+    border-radius: 50%!important;
+    min-width: 0!important;
+}
+
+.pdfButton :global(.MuiButton-startIcon) {
+    margin: 0!important;
+}
+
+.menuHamburgerStyled {
+    background-color: transparent!important;
+    padding: 0!important;
+    min-width: 0px!important;
+    width: fit-content!important;
+}
+.menuHamburgerStyled:hover {
+    box-shadow: none!important;
+}
+
+@media (max-width: 900px) {
+    .buttonStyled {
+        padding: 0!important;
+    }
+    .pdfButton {
+        padding: 0!important;
+    }
+}
+@media (min-width: 900px) {
+    .headerContent {
+        grid-template-columns: 3% 67% 30%;
+    }
+    .logoStyled {
+        width: 12.2rem;
+    }
+    .boxOptions {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+    .pdfButton {
+        display: none!important;
+        min-width: 2.1rem;
+    }
+    .lensStyled {
+        display: flex!important;
+        fill: var(--header-color);
+    }
+    .buttonText {
+        display: flex!important;
+    }
+    .buttonStyled {
+        border-radius: 5px!important;
+        min-width: 6rem;
+        width: 6rem;
+        width: fit-content;
+    }
+    
+    .buttonStyled :global(.MuiButton-startIcon) {
+        display: none;
+    }
+}
+
+.childrenContent {
+    min-height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--hasAlertMargin, 6rem);
+    /* marginTop: hasAlertZone && closedTab ? '13.6rem' : '6rem', */
+}
+
+@media (min-width: 900px) {
+    .childrenContent {
+        margin-top: calc(var(--hasAlertMargin, 3.6rem) + 2.4rem);
+        /* marginTop:  16rem : 12.5rem; */
+    }
+}

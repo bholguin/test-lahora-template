@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 1rem;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--grey-800);
+    padding: 0 0.2rem;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+}

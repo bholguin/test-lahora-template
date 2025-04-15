@@ -1,0 +1,63 @@
+.content {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content::before{
+    content: " ";
+    background-image: url(/arte/202503191331/bg_error.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.textContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 145px;
+    padding: 1rem;
+}
+
+.title {
+    color: white;
+    font-size: 55px;
+    line-height: 1.11111;
+    text-align: center;
+}
+
+.description {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: normal;
+}
+
+.linkStyled {
+    text-decoration: none;
+    font: 800 18px/44px Libre Franklin, sans-serif;
+    color: white;
+    width: 260px;
+    border: 2px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    margin: 30px;
+    letter-spacing: .4px;
+}
+
+.linkStyled:hover {
+    background-color: white;
+    color: #000;
+}

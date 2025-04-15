@@ -1,0 +1,19 @@
+.content {
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.location {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 46px;
+    color: var(--primary-main);
+    padding: 0;
+    text-transform: capitalize;
+    margin: 0
+}

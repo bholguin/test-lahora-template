@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.3rem;
+}
+
+.avatarContent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.journalistInfo {
+    font-size: 14px;
+    padding: 0;
+}
+
+.avatarStyled {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    font-size: 18px;
+}

@@ -1,0 +1,38 @@
+version: 0.1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - echo "Variables de entorno"
+        - echo "NEXT_PUBLIC_API_HOST=$NEXT_PUBLIC_API_HOST" >> .env
+        - echo "API_PATH_VERSION=$API_PATH_VERSION" >> .env
+        - echo "API_PATH=$API_PATH" >> .env
+        - echo "X_SECURITY_TOKEN=$X_SECURITY_TOKEN" >> .env
+        - echo "USER_AGENT=$USER_AGENT" >> .env
+        - echo "PUBLICATION_ID=$PUBLICATION_ID" >> .env
+        - echo "CLEINT_TAG_TYPE=$CLEINT_TAG_TYPE" >> .env
+        - echo "HEADER_OPTION=$HEADER_OPTION" >> .env
+        - echo "FOOTER_OPTION=$FOOTER_OPTION" >> .env
+        - echo "SECTION_OPTION=$SECTION_OPTION" >> .env
+        - echo "VIDEOS_OPTION=$VIDEOS_OPTION" >> .env
+        - echo "AUTOR_HEADER_OPTION=$AUTOR_HEADER_OPTION" >> .env
+        - echo "TAG_HEADER_OPTION=$TAG_HEADER_OPTION" >> .env
+        - echo "NEWS_PER_SECTION=$NEWS_PER_SECTION" >> .env
+        - echo "PAGINATION_MAX_PAGES=$PAGINATION_MAX_PAGES" >> .env
+        - echo "NEXT_PUBLIC_ENV=$NEXT_PUBLIC_ENV" >> .env
+        - echo "NEXT_PUBLIC_IS_OFFLINE=$IS_OFFLINE" >> .env
+        - echo "USERNAME_OFFLINE=$USERNAME_OFFLINE" >> .env
+        - echo "PASSWORD_OFFLINE=$PASSWORD_OFFLINE" >> .env
+
+        - echo "Build La Hora"
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

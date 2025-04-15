@@ -1,0 +1,19 @@
+.content {
+    background-color: var(--primary-main);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContent {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+}
+
+@media (min-width: 900px) {
+    .videoContent {
+        grid-template-columns: 70% 30%;
+    }
+}

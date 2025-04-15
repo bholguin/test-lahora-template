@@ -1,0 +1,125 @@
+.content {
+    background-color: var(--primary-main);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentInfo {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 1rem;
+}
+
+.imageStyled {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--common-white);
+    grid-column: span 2;
+    grid-row: span 4;
+    order: 1;
+}
+
+.contentIconStyled {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--common-white);
+    grid-column: span 2;
+    grid-row: span 4;
+    order: 1;
+}
+
+.name {
+    line-height: 36px;
+    font-size: 1.75rem;
+    color: var(--common-white);
+    grid-column: span 12;
+    order: 2;
+    margin: 0;
+}
+
+.email {
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 18px;
+    color: var(--common-white);
+    font-family: Arial, sans-serif;
+    order: 4;
+    grid-column: span 14;
+    border-top: solid 1px #D9D9D94D;
+    border-bottom: solid 1px #D9D9D94D;
+    padding: 1rem 0rem;
+    text-align: center;
+    letter-spacing: normal;
+    margin: 0;
+}
+
+.description {
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 18px;
+    color: var(--common-white);
+    font-family: Arial, sans-serif;
+    order: 5;
+    grid-column: span 14;
+    letter-spacing: normal;
+    margin: 0;
+}
+
+.contenSocialNetwork {
+    width: 100%;
+    display: flex;
+    grid-column: span 12;
+    order: 3;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.socialIcon {
+    fill: var(--common-white);
+    width: 42px;
+}
+
+@media (min-width: 900px) {
+    .contentInfo {
+        padding: 4rem;
+        width: 1185px;
+    }
+
+    .imageStyled {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .contentIconStyled {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .name {
+        font-size: 2.4rem;
+        line-height: 46px;
+    }
+
+    .email {
+        grid-column: span 11;
+        padding: 0rem;
+        border: 0px;
+        text-align: start;
+        order: 3;
+    }
+
+    .description {
+        grid-column: span 11;
+        order: 4;
+    }
+
+    .contenSocialNetwork {
+        order: 5;
+    }
+}

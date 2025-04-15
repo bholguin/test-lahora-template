@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contentGrid {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+@media (min-width: 1200px) { 
+    .contentGrid { 
+        gap: '1rem'
+    }
+}

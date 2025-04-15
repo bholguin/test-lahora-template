@@ -1,0 +1,13 @@
+.newsContent {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,1fr);
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .newsContent {
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit,343px);
+    }
+}

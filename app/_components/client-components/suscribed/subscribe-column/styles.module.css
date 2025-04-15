@@ -1,0 +1,132 @@
+.content {
+    background-color: #f6f6f6;
+    display: flex;
+    width: 310px;
+    padding: 1rem;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    gap: 1rem;
+    position: relative;
+    padding-top: 250px;
+}
+
+.subscribeImage {
+    position: absolute;
+    top: -30px;
+    width: 263px;
+}
+
+.tag {
+    font-weight: 800;
+    width: 100px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 12px;
+    font-size: 0.8125rem;
+    padding-right: 12px;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+
+.contentTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--grey-600);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+}
+
+
+.inputStyled {
+    border-radius: 100px;
+    padding: 0;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+.inputStyled:hover {
+    border-color: var(--common-black);
+}
+.inputStyled:has(input:focus) {
+    border-color: var(--primary-main);
+}
+
+.inputStyled input {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentColor;
+    padding: 4px 0 5px;
+    border: 0;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    font-family: Arial, sans-serif!important;
+    width: 100%;
+    padding: 8.5px 0 8.5px 14px;
+    outline: none;
+}
+
+.buttonStyled {
+    background-color: var(--primary-50);
+    height: 54px;
+    font-family: Arial, sans-serif;
+    border: none;
+    color: var(--common-white);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.contentTerms {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribeText {
+    color: var(--grey-600);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 0.1rem;
+    letter-spacing: normal;
+}
+
+.terms {
+    color: var(--grey-600);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-decoration-color: var(--grey-600);
+    letter-spacing: normal;
+}

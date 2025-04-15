@@ -1,0 +1,103 @@
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 21px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 6px;
+}
+
+.imageStyled {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    border: 2px solid var(--common-white);
+}
+
+.contentIconStyled {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    border: 2px solid var(--common-white);
+}
+
+.avatarContent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.journalistSection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.journalistInfo {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    color: var(--common-black);
+    text-decoration: none;
+}
+
+.journalistInfo:hover {
+    text-decoration: underline;
+}
+
+.socialNetworkSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.avatarStyled {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+    line-height: 24px;
+    padding: 0;
+}
+
+.facebookStyled {
+    fill: #000000;
+    width: 12px;
+}
+
+.xStyled {
+    fill: #000000;
+    width: 25px;
+}
+
+.instagramStyled {
+    fill: #000000;
+    width: 20px;
+}
+
+.linkedinStyled {
+    fill: #000000;
+    width: 25px;
+}
+
+.viewMore {
+    font-size: 14px;
+    line-height: 1.4;
+    display: inline-block;
+    color: var(--primary-main);
+    text-decoration: underline;
+}

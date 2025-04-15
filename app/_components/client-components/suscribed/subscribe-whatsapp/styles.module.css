@@ -1,0 +1,100 @@
+.content {
+    background-color: var(--common-white);
+    display: flex;
+    width: 310px;
+    padding: 1rem;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    gap: 20px;
+    position: relative;
+    padding-top: 220px;
+    box-shadow: 0px 5px 10px 0px #00000026;
+}
+
+.subscribeImage {
+    position: absolute;
+    top: 12px;
+    width: 263px;
+}
+
+.contentTitle {
+    display: flex;
+    flex-direction: column;
+    background-color: #E9E9E9;
+    border-radius: 12px;
+    height: 207px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 56px;
+    text-align: center;
+    padding: 0;
+}
+
+.subTitle {
+    color: var(--grey-600);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+.buttonStyled {
+    background-color: var(--primary-50);
+    height: 54px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.contentTerms {
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsappLink {
+    border: 3px solid #7AD16D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 100px;
+    padding: 15px 8px;
+    width: 100%;
+    color: var(--common-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: normal;
+}
+
+.subscribeText {
+    color: var(--grey-600);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+    padding: 0.1rem;
+}
+
+.terms {
+    color: var(--grey-600);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+    text-decoration-color: var(--grey-600);
+}

@@ -1,0 +1,126 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoDesk {
+    fill: var(--footer-logo-color);
+    display: none;
+    width: 201px;
+}
+
+.logoMobile {
+    fill: var(--footer-logo-color);
+    display: block;
+    width: 10rem;
+}
+
+.brandContent {
+    background-color: var(--footer-background);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    padding: 1rem 0rem;
+}
+
+
+.socialNetworkIcon {
+    fill: var(--footer-color);
+    width: 42px;
+}
+
+.socialNetworkIcon:hover {
+    fill: var(--warning-main);
+}
+
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.copyrigth {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--common-black);
+    padding-top: 2rem;
+}
+
+.copyrigthContent {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    border-top: solid 1px var(--grey-50);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrigthText {
+    color: var(--footer-color);
+    font-size: .6rem;
+    font-weight: 400;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+    margin: 0;
+}
+
+.ourOptions{
+    color: var(--footer-color);
+    font-size: .8rem;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+    padding: 0;
+}
+
+
+.section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+    .logoDesk {
+        display: block;
+    }
+
+    .logoMobile{
+        display: none;
+    }
+
+    .socialMedia {
+        gap: 2.5rem
+    } 
+
+    .brandContent {
+        padding: 2rem 0rem;
+    }
+
+    .copyrigth {
+        padding-top: 0px;
+    }
+
+    .section{
+        width: 70%;
+        padding: 2rem;
+    }
+}

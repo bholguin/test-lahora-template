@@ -1,0 +1,69 @@
+.boxInformation {
+    position: relative!important;
+    gap: 0.5rem!important;
+    display: flex!important;
+    width: 100%!important;
+    flex-direction: column!important;
+}
+
+.sectionDescription {
+    font-size: 12px!important;
+    font-weight: 800!important;
+    width: fit-content!important;
+    text-transform: uppercase!important;
+    font-family: Arial, sans-serif!important;
+    letter-spacing: normal!important;
+}
+
+
+.articule {
+    padding: 0px!important;
+    line-height: var(--lineHeightTitle, 26px)!important;
+    font-size: var(--fontSizeTitle, 20px)!important;
+}
+
+.linkStyled {
+    text-decoration: none!important;
+}
+
+.linkStyled:hover {
+    text-decoration: var(--isLink)!important;
+}
+
+
+.description {
+    color: var(--fontSizeSubTitle, var(--grey-600))!important;
+    font-size: var(--fontSizeSubTitle, 16px)!important;
+    font-weight: 400!important;
+    line-height: var(--lineHeightSubTitle, 22px)!important;
+    text-align: flex-start!important;
+    font-family: Arial, sans-serif!important;
+    letter-spacing: normal!important;
+    padding: 0;
+}
+
+
+.correspondent {
+    font-size: 12px!important;
+    font-weight: 400!important;
+    padding: 0!important;
+    font-family: Arial, sans-serif!important;
+    letter-spacing: normal!important;
+}
+
+
+.correspondentLink {
+    font-size: 12px!important;
+    font-weight: 400!important;
+    padding: 0!important;
+    font-family: Arial, sans-serif!important;
+    letter-spacing: normal!important;
+}
+
+
+.dotStyles {
+    position: absolute!important;
+    right: 0!important;
+    top: -10px!important;
+    cursor: pointer!important;
+}

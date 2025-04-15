@@ -1,0 +1,39 @@
+{
+  "name": "la-hora",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=dev & next dev",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky",
+    "build": "next build"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/recaptcha-enterprise": "^6.0.1",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
+    "html-react-parser": "^5.1.18",
+    "next": "14.2.14",
+    "node-html-parser": "^6.1.13",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-multi-carousel": "^2.8.5",
+    "react-share": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-google-recaptcha": "^2.1.9",
+    "eslint": "^8",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-next": "14.2.14",
+    "husky": "^9.1.6",
+    "typescript": "^5"
+  }
+}

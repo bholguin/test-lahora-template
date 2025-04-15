@@ -1,0 +1,86 @@
+.content {
+    height: 40px;
+    width: 100%;
+    background-color: var(--header-tape-background);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0.625rem 24px;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.linkStyled {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--header-tape-color);
+    width: max-content;
+    white-space: nowrap;
+    letter-spacing: normal;
+}
+
+.linkStyled:hover {
+    color: var(--header-tape-active-link);
+}
+
+.linkSocialNetwork {
+    display: flex;
+}
+
+.title {
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: normal;
+    color: var(--header-tape-title);
+    margin: 0;
+}
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    min-width: 800px;
+    align-items: center;
+}
+
+.socialNetwork {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon {
+    fill: var(--header-tape-icons);
+}
+
+.facebook {
+    width: 35px;
+}
+
+.youtube {
+    width: 35px;
+}
+
+.x {
+    width: 30px;
+}
+
+.instagram {
+    width: 22px;
+}
+
+.gnews {
+    width: 35px;
+}
+
+.tiktok {
+    width: 30px;
+}
+
+.whatsapp {
+    width: 32px;
+}

@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.linkStyled {
+    width: 200px;
+    font-weight: 800;
+    padding: .5rem 1rem;
+    font-size: 18px;
+    line-height: 20.7px;
+    color: var(--primary-main);
+    font-family: Arial, sans-serif;
+    letter-spacing: normal;
+    border-radius: 50px;
+    border: 2px solid var(--primary-main);
+    display: flex;
+    justify-content: center;
+}
+
+.linkStyled:hover {
+    color: var(--common-white);
+    background-color: var(--primary-main);
+}

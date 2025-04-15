@@ -1,0 +1,41 @@
+.content {
+    grid-template-columns: repeat(auto-fit, 370px);
+}
+
+.newsContentSection {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 23.6rem) !important;
+}
+
+.itemContent {
+    padding: 0;
+    margin: 0;
+    border-right: 0;
+}
+
+.ItemCustomContent {
+    padding: 0;
+    margin: 0;
+    border-right: 0;
+}
+
+@media (min-width: 1200px) {
+    .itemContent {
+        border-right: 1px solid var(--grey-100);
+        padding-right: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .ItemCustomContent {
+        border-right: 1px solid var(--grey-100);
+        padding-right: 2.5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .newsContentSection {
+        gap: 2.5rem;
+        justify-content: flex-start;
+    }
+}

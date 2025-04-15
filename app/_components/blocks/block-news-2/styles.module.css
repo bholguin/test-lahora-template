@@ -1,0 +1,26 @@
+.headerSection {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.newsContent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+@media (min-width: 900px) {
+    .headerSection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .newsContent {
+        gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

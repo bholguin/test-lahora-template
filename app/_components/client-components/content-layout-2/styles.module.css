@@ -1,0 +1,19 @@
+.content {
+    min-height: '40vh';
+    width: 100%;
+    padding: 1.25rem;
+    display: 'flex';
+    flex-direction: 'column';
+    margin: '0 auto';
+    padding-bottom: '45px';
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+@media (min-width: 900px) {
+    .content {
+        width: 1185px;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+}
+

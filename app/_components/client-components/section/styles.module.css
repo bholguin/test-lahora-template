@@ -1,0 +1,69 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.titleContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    white-space: pre;
+    text-align: center; 
+    width: max-content;
+}
+[data-after="true"] .title::before {
+    content: "Opinión: ";
+    white-space: normal;
+}
+
+@media (min-width: 900px) {
+    .title {
+        text-wrap: nowrap;
+        padding: 0 1rem 0 0;
+        width: auto;
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+    [data-after="true"] .title::before {
+        content: "Opinión | ";
+        white-space: nowrap;
+    }
+}
+
+.startLine,
+.line {
+    width: 100%;
+    height: 0.6rem;
+}
+
+.startLine {
+    display: block;
+}
+
+@media (min-width: 900px) {
+    .startLine {
+        display: none;
+    }
+}
+
+.childrenContent {
+    padding-top: 40px;
+}
+
+@media (min-width: 900px) {
+    .childrenContent {
+        padding-top: 51px;
+    }
+}
+
+.readMore { 
+    margin: auto;
+    margin-right: 0;
+}
