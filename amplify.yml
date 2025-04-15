@@ -9,8 +9,10 @@ frontend:
         - cd google-cloud-sdk
         - ls
         - ./install.sh --quiet
+        - cd bin
+        - ls
         #- ls
-        - ./bin/gcloud init
+        - ./gcloud init
         #- ./google-cloud-sdk/bin/gcloud auth login brayan.holguin@nivelics.co --no-browser
         - npm ci
     build:
