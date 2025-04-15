@@ -5,7 +5,7 @@ frontend:
       commands:
         - curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz
         - ls
-        - tar -xf google-cloud-cli-linux-x86_64.tar.gz
+        - tar -xvf google-cloud-cli-linux-x86_64.tar.gz
         - ls
         - ./google-cloud-sdk/install.sh
         - ls
