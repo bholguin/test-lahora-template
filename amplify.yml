@@ -6,8 +6,8 @@ frontend:
         - curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz
         - tar -xvf google-cloud-cli-linux-x86_64.tar.gz
         - ./google-cloud-sdk/install.sh --help
-        - gcloud init
-        - gcloud auth login brayhan.holguin@nivelics.co
+        - ./google-cloud-sdk/bin/gcloud init
+        - ./google-cloud-sdk/bin/gcloud auth login brayan.holguin@nivelics.co
         - npm ci
     build:
       commands:
