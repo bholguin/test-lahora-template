@@ -6,10 +6,11 @@ frontend:
         - curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-arm.tar.gz
         - tar -xvf google-cloud-cli-linux-arm.tar.gz
         - ls
-        #- cd google-cloud-sdk
-        - ./google-cloud-sdk/install.sh --quiet
+        - cd google-cloud-sdk
+        - ls
+        - ./install.sh --quiet
         #- ls
-        - ./google-cloud-sdk/bin/gcloud init
+        - ./bin/gcloud init
         #- ./google-cloud-sdk/bin/gcloud auth login brayan.holguin@nivelics.co --no-browser
         - npm ci
     build:
