@@ -7,7 +7,7 @@ frontend:
         - ls
         - tar -xvf google-cloud-cli-linux-x86_64.tar.gz
         - ls
-        - ./google-cloud-sdk/install.sh --no-interaction 
+        - ./google-cloud-sdk/install.sh -y
         - ls
         - ./google-cloud-sdk/bin/gcloud init
         - npm ci
