@@ -8,7 +8,8 @@ frontend:
         - ls
         - cd google-cloud-sdk
         - ls
-        - ./install.sh --quiet
+        - ls -la ./google-cloud-sdk/bin/
+        - ./install.sh --help --quiet
         - cd bin
         - ls
         #- ls
