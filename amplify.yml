@@ -6,9 +6,9 @@ frontend:
         - curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-arm.tar.gz
         - tar -xvf google-cloud-cli-linux-arm.tar.gz
         - ls
+        - ls -la ./google-cloud-sdk/bin/
         - cd google-cloud-sdk
         - ls
-        - ls -la ./google-cloud-sdk/bin/
         - ./install.sh --help --quiet
         - cd bin
         - ls
