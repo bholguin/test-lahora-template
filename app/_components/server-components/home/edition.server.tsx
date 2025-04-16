@@ -100,9 +100,9 @@ export default async function Ediciones(props: Props) {
             <BlockNews3
               news={provincias}
               title={`Más noticias de\n${edicionOption.title}`}
-              banner={
-                <BannerAdvertising banners={banners} name="rectangle_1" />
-              }
+              bannerArray={[
+                <BannerAdvertising key={0} banners={banners} name="rectangle_1" />,
+              ]}
               halfPageBanner={<Readest ranking={ranking} title="Ranking" />}
               rounded
             />
@@ -212,9 +212,9 @@ export default async function Ediciones(props: Props) {
             <BlockNews3
               news={noPerder}
               title="No te lo pierdas"
-              banner={
-                <BannerAdvertising banners={banners} name="rectangle_6" />
-              }
+              bannerArray={[
+                <BannerAdvertising key={0} banners={banners} name="rectangle_6" />,
+              ]}
               halfPageBanner={
                 <SubscribeWhatsAppColumn whatsappLink="" terms="" />
               }

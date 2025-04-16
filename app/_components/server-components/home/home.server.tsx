@@ -34,7 +34,6 @@ import {
 } from '@/app/_setup/types/new-list-response';
 import {socials, SocialNetworks} from '@/app/_setup/config/client';
 
-
 export const revalidate = 0;
 
 type BlockSassType =
@@ -158,7 +157,8 @@ export default async function HomePage(props: Props) {
         menu={menu}
         sidebar={sidebar}
         cintillo={cintillo}
-        tapeTitle="Ediciones"
+        tapeTitle={cintillo?.length > 0 ? 'Ediciones': ''}
+        socialIcons
         alertZone={alertZone ?? undefined}
       >
         <ContentLayout1>
@@ -170,6 +170,7 @@ export default async function HomePage(props: Props) {
               <SectionCardCarousel blockSass={blockSass1} />
             </MiddleSection>
           </ShowSection>
+
           {/** Seccion noticias*/}
           <ShowSection show={!!noticias && noticias.length > 0}>
             <NewsDescriptionBlock2
@@ -237,9 +238,9 @@ export default async function HomePage(props: Props) {
             <BlockNews3
               news={provincias}
               title="Provincias"
-              banner={
-                <BannerAdvertising banners={banners} name="rectangle_4" />
-              }
+              bannerArray={[
+                <BannerAdvertising key={0} banners={banners} name="rectangle_4" />,
+              ]}
               halfPageBanner={<Readest ranking={ranking} title="Ranking" />}
               rounded
             />
@@ -312,9 +313,9 @@ export default async function HomePage(props: Props) {
             <BlockNews3
               news={noPerder}
               title="No te lo pierdas"
-              banner={
-                <BannerAdvertising banners={banners} name="rectangle_5" />
-              }
+              bannerArray={[
+                <BannerAdvertising key={0} banners={banners} name="rectangle_5" />,
+              ]}
               halfPageBanner={
                 socials[SocialNetworks.WhatsApp].show && (
                   <SubscribeWhatsAppColumn

@@ -1,13 +1,13 @@
 import {createAssessment} from '@/app/_setup/helpers/createAssessment';
-// import {sendEmail} from '@/app/_setup/services';
 import {NextResponse} from 'next/server';
+// import {sendEmail} from '@/app/_setup/services';
 
 export async function POST(request: Request) {
   try {
     const data = await request.json();
     const score = await createAssessment({
-      projectID: 'my-project-4298-1744655604290',
-      recaptchaKey: '6LeZwxgrAAAAAFpOu-nKNBIWFZco4b6EKLgRlrQZ',
+      projectID: process.env.CAPTCHA_PROJECT_ID || '',
+      recaptchaKey: process.env.NEXT_PUBLIC_CAPTCHA_KEY || '',
       token: data.token,
       recaptchaAction: 'contacto',
     });

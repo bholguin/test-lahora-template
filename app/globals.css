@@ -65,6 +65,9 @@
     --search-input-color: #7b888a;
     --search-input-icons: #2d2d2d;
 
+    --section-title-color: var(--common-black);
+    --section-line-width: 1px; 
+
     --footer-logo-color: var(--common-white);
     --footer-background: var(--primary-main);
     --footer-color: var(--common-white);
@@ -154,6 +157,11 @@ body {
 button {
     font-family: var(--font-family) !important;
     cursor: pointer;
+}
+
+/* hide recaptcha */
+.grecaptcha-badge { 
+    visibility: hidden;
 }
 
 .content-layout-1 {

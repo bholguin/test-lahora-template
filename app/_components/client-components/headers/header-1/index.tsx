@@ -16,6 +16,7 @@ type HeaderProps = {
   children: React.ReactNode;
   sidebar: Array<MenuResponse>;
   cintillo?: Array<MenuResponse>;
+  socialIcons:boolean;
   tapeTitle?: string;
 };
 

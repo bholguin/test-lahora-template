@@ -13,6 +13,7 @@ import {headers} from 'next/headers';
 
 type Props = {
   tapeTitle?: string;
+  socialIcons: boolean;
   cintillo?: Array<MenuResponse>;
 };
 
@@ -23,11 +24,11 @@ export const HeaderTape: FC<Props> = (props) => {
   const index = cintillo?.findIndex((x) => x.link === pathname) ?? 0;
 
   return (
-    Array.isArray(cintillo) && (
+    (Array.isArray(cintillo) || props.socialIcons) && (
       <section className={styles.content}>
-        <div className={styles.tabs}>
+        {Array.isArray(cintillo) && <div className={styles.tabs}>
           <p className={styles.title}>{`${tapeTitle}:`}</p>
-          {cintillo[index] && <a
+          {cintillo && cintillo[index] && <a
             className={styles.linkStyled}
             key={Math.random()}
             target={cintillo[index]?.target}
@@ -39,7 +40,7 @@ export const HeaderTape: FC<Props> = (props) => {
           >
             {cintillo[index]?.description}
           </a>}
-          {cintillo.map((item, i) => {
+          {cintillo && cintillo.map((item, i) => {
             if (i !== index) {
               return <a
                 className={styles.linkStyled}
@@ -54,7 +55,7 @@ export const HeaderTape: FC<Props> = (props) => {
               </a>;
             }
           })}
-        </div>
+        </div>}
         <div className={styles.socialNetwork}>
           {socials[SocialNetworks.TikTok].show && (
             <a

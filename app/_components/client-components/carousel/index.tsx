@@ -37,6 +37,8 @@ export const CustomCarousel: FC<CustomCarouselProps> = (props) => {
           {...props}
           responsive={config}
           partialVisible
+          // ssr={true}
+          // deviceType='mobile'
         />
       )}
     </div>

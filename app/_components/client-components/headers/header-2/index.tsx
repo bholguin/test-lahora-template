@@ -14,14 +14,15 @@ type Props = {
   children: ReactNode;
   sidebar: Array<MenuResponse>;
   cintillo?: Array<MenuResponse>;
+  socialIcons: boolean;
   tapeTitle?: string;
 };
 
-const Header2: FC<Props> = ({children, sidebar, cintillo, tapeTitle}) => {
+const Header2: FC<Props> = ({children, sidebar, cintillo, tapeTitle, socialIcons}) => {
   return (
     <>
       <header className={styles.headerStyled}>
-        <HeaderTape cintillo={cintillo} tapeTitle={tapeTitle}/>
+        {socialIcons && <HeaderTape socialIcons={socialIcons} cintillo={cintillo} tapeTitle={tapeTitle}/>}
         <div className={styles.headerContent}>
           <ButtonApp
             className={styles.menuHamburgerStyled}

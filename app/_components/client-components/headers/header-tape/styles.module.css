@@ -46,6 +46,9 @@
     min-width: 800px;
     align-items: center;
 }
+.content .socialNetwork:first-child:last-child {
+    margin-left: auto;
+}
 
 .socialNetwork {
     display: flex;
@@ -83,4 +86,10 @@
 
 .whatsapp {
     width: 32px;
+}
+
+@media (max-width: 900px) {
+    .content .socialNetwork:first-child:last-child {
+        margin: 0 auto;
+    }
 }

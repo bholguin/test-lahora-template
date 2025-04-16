@@ -23,7 +23,7 @@ export default async function RootLayout({
   return (
     <html lang={config.lang}>
       <head>
-        <Script src="https://www.google.com/recaptcha/enterprise.js?render=6LeZwxgrAAAAAFpOu-nKNBIWFZco4b6EKLgRlrQZ" />
+        <Script src={`https://www.google.com/recaptcha/enterprise.js?render=${process.env.NEXT_PUBLIC_CAPTCHA_KEY}`} />
         <link
           rel="preload"
           as="font"

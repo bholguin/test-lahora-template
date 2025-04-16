@@ -132,7 +132,7 @@ const ImageOnline: FC<ImageProps> = async (props) => {
               }
               src={
                 props?.preview?.original ?
-                  await getImageUrl(images[0]?.url || '') :
+                  await getImageUrl(images[images.length > 1 ? 1 : 0]?.url || '') :
                   ''
               }
               style={{

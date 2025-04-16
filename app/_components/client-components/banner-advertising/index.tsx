@@ -7,7 +7,7 @@ type Props = {
     name: string
 }
 
-const bannersReplace = (bannerLineAd: string) => {
+export const bannersReplace = (bannerLineAd: string) => {
   return (bannerLineAd || '')
     .replaceAll('[section_replace]', '')
     .replaceAll('[tags_replace]', '')

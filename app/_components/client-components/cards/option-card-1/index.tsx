@@ -26,9 +26,10 @@ export const OpinionCard1: FC<OpinionCardProps> = (props) => {
         </div>
       )}
       <div className={styles.boxInformation}>
+        <p className={styles.authorName}>{data?.authors[0]?.fullname}</p>
         <p className={styles.title}>{cutString(data?.main?.title?.home, 30)}</p>
         <p className={styles.comment}>
-          {cutString(data?.main?.subtitle?.striped)}
+          {cutString(data?.main?.subtitle?.striped, 70)}
         </p>
         <p className={styles.dateText}>
           {dayjs(data.info.date.modified).locale('es').format('DD [De] MMMM')}

@@ -19,13 +19,14 @@ type Props = {
   tapeTitle?: string;
   openAlertZone: boolean
   visibility?: boolean
+  socialIcons: boolean
 };
 
 export const HeaderSticky: FC<Props> = (props) => {
   const {alertZone} = props;
   return (
     <header className={styles.headerStyled} id='header-sticky' style={{display: 'flex'}}>
-      <HeaderTape cintillo={props.cintillo} tapeTitle={props.tapeTitle} />
+      {props.socialIcons && <HeaderTape socialIcons={props.socialIcons} cintillo={props.cintillo} tapeTitle={props.tapeTitle} />}
       <div className={styles.headerContent}>
         <ButtonApp
           id='button-app'
@@ -39,7 +40,7 @@ export const HeaderSticky: FC<Props> = (props) => {
         >
           <MenuHamburger className={styles.startIcon} color="var(--header-icons)" width={27} height={27} />
         </ButtonApp>
-        <a href={'/'}>
+        <a href={'/'} aria-label='Home'>
           <Logo className={styles.logoStyled} />
         </a>
         {alertZone?.data && (
@@ -60,7 +61,7 @@ export const HeaderSticky: FC<Props> = (props) => {
           </div>
         )}
         <div className={[styles.buttonSection, alertZone?.data ? styles.hasAlertZone : ''].join(' ')}>
-          <a href={'/buscar'} style={{display: 'flex'}}>
+          <a href={'/buscar'} aria-label='Buscar' style={{display: 'flex'}}>
             <Lens width={28} height={28} color="var(--header-icons)" />
           </a>
           <ButtonApp

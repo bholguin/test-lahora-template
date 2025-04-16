@@ -26,7 +26,6 @@
   }
   
   .boxInformation {
-    padding-top: 1.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -54,3 +53,10 @@
     font-size: 12px;
   }
   
+
+  .authorName {
+    color: var(--primary-main);
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+  }

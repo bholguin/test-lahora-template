@@ -9,7 +9,7 @@ import {NewListResponse} from '@/app/_setup/types/new-list-response';
 import axios from 'axios';
 import styles from '@/app/_components/client-components/cards/section-card-2/styles.module.css';
 import styles2 from '@/app/_components/client-components/image/styles.module.css';
-import {FC, useCallback, useEffect, useState} from 'react';
+import {FC, useCallback, useEffect, useMemo, useState} from 'react';
 
 type Props = {
   path: string;
@@ -134,7 +134,7 @@ export interface ImageProps {
   BackDropAuxHeigthMobile?: string;
 }
 
-const ImageClient: FC<ImageProps> = (props) => {
+export const ImageClient: FC<ImageProps> = (props) => {
   const {
     rounded = false,
     isVideo = false,
@@ -143,7 +143,7 @@ const ImageClient: FC<ImageProps> = (props) => {
     BackDropAuxHeigthMobile,
   } = props;
 
-  const images = props?.preview?.sizes || [];
+  const images = useMemo(() => props?.preview?.sizes || [], [props?.preview?.sizes]);
 
   const [imageUrls, setImageUrls] = useState<Array<string | undefined>>([]);
   const [mainImageUrl, setMainImageUrl] = useState<string>('');

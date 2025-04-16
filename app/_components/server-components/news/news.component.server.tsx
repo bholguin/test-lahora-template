@@ -24,6 +24,7 @@ import {MasNoticias} from './components/mas-noticias';
 import {ContentLayout2} from '../../client-components/content-layout-2';
 import {LazyLoader} from './components/LazyLoader';
 import Section from '../../client-components/section';
+import BannerClient from './components/mas-noticias/BannerClient';
 
 type Props = {
   menu: MenuResponse[];
@@ -107,18 +108,20 @@ const NewsComponent = async (props: Props) => {
                       <RelatedNews path={props.path} />
                     </LazyLoader>
                   </Section>
-                  <LazyLoader>
-                    <MasNoticias
-                      section={props.pageProps.slug}
-                      currentNews={news[0]}
-                      banner={
-                        <BannerAdvertising
-                          banners={banners ?? []}
-                          name="rectangle_1"
-                        />
-                      }
-                    />
-                  </LazyLoader>
+                  <Section title="Más Noticias">
+                    <LazyLoader>
+                      <MasNoticias
+                        section={props.pageProps.slug}
+                        currentNews={news[0]}
+                        banner={
+                          <BannerClient
+                            banners={banners ?? []}
+                            name="rectangle_1"
+                          />
+                        }
+                      />
+                    </LazyLoader>
+                  </Section>
                 </div>
               </div>
             }

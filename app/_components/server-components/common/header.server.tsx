@@ -9,6 +9,7 @@ type Props = {
   sidebar: Array<MenuResponse>;
   alertZone?: NewListResponse;
   cintillo?: Array<MenuResponse>;
+  socialIcons?:boolean;
   children: ReactNode;
   tapeTitle?: string
 };
@@ -20,6 +21,7 @@ const HeaderComponent: FC<Props> = async ({
   sidebar,
   cintillo,
   tapeTitle,
+  socialIcons = true,
 }) => {
   switch (process.env.HEADER_OPTION) {
   case 'op1':
@@ -31,13 +33,14 @@ const HeaderComponent: FC<Props> = async ({
         editionText="Periódico Digital"
         menu={menu}
         cintillo={cintillo}
+        socialIcons={socialIcons}
         tapeTitle={tapeTitle}
       >
         {children}
       </Header1>
     );
   case 'op2':
-    return <Header2 sidebar={sidebar} cintillo={cintillo} tapeTitle={tapeTitle}>{children}</Header2>;
+    return <Header2 sidebar={sidebar} socialIcons={socialIcons} cintillo={cintillo} tapeTitle={tapeTitle}>{children}</Header2>;
   default:
     return <></>;
   }

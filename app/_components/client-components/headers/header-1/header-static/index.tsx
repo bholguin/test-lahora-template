@@ -18,13 +18,14 @@ type Props = {
   alertZone?: NewListResponse;
   sidebar: Array<MenuResponse>;
   cintillo?: Array<MenuResponse>;
+  socialIcons: boolean;
   tapeTitle?: string;
 };
 
 export const HeaderStatic:FC<Props> = (props) => {
   const {menu, alertZone} = props;
   return (
-    <header className={styles.headerStyled} id='header-static' style={{top: props.cintillo ? 40 : 0}}>
+    <header className={styles.headerStyled} id='header-static' style={{top: props.cintillo || props.socialIcons ? 40 : 0}}>
       {/* <HeaderTape cintillo={props.cintillo} tapeTitle={props.tapeTitle} /> */}
       <div
         className={[styles.headerContent, alertZone?.data ? styles.hasAlertZone : ''].join(' ')}

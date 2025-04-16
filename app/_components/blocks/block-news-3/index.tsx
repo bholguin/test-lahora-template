@@ -10,7 +10,7 @@ interface BlockNews1Props {
   share?: boolean;
   showSubtitle?: boolean;
   rounded?: boolean;
-  banner?: ReactNode;
+  bannerArray?: ReactNode[];
   halfPageBanner?: ReactNode;
 }
 
@@ -21,8 +21,8 @@ const BlockNews3: FC<BlockNews1Props> = (props) => {
       <Section title={title}>
         <div className={styles.content}>
           <div className={styles.newsContent}>
-            {props.banner && (
-              <div className={styles.boxPosition} style={{order: 2}} >
+            {props.bannerArray && props.bannerArray.map((banner, i)=>(
+              <div className={styles.boxPosition} key={i} style={{order: 2 + (5 * i)}} >
                 <div className={styles.bannerContentAux}>
                   <div
                     style={{
@@ -31,11 +31,11 @@ const BlockNews3: FC<BlockNews1Props> = (props) => {
                       top: '0',
                     }}
                   >
-                    {props.banner}
+                    {banner}
                   </div>
                 </div>
               </div>
-            )}
+            ))}
             {news.map((item, index) => (
               <div className={styles.boxPosition} style={{order: index}} key={index}>
                 <SectionCard
