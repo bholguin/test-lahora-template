@@ -5,16 +5,7 @@ frontend:
       commands:
         - curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-arm.tar.gz
         - tar -xvf google-cloud-cli-linux-arm.tar.gz
-        - ls
-        - ls -la ./google-cloud-sdk/bin/
-        - cd google-cloud-sdk
-        - ls
-        - ./install.sh --help --quiet
-        - cd bin
-        - ls
-        #- ls
-        - ./gcloud init
-        #- ./google-cloud-sdk/bin/gcloud auth login brayan.holguin@nivelics.co --no-browser
+        - ./google-cloud-sdk/bin/gcloud auth activate-service-account some-account-name@my-project-4298-1744655604290.iam.gserviceaccount.com --key-file=./account-service.json
         - npm ci
     build:
       commands:
